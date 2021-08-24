@@ -5,11 +5,7 @@
 
 <br />
 
-<p align="center">
-  <a href="https://nicolasmb3.github.io/celine_website_240821/">
-    <img src="assets/images/logo/logo.png" alt="Logo">
-  </a>
-
+<p>
   <p align="center">
     Par Nicolas BAAR
     <br />
