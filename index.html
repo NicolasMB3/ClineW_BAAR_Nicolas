@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="assets/css/style.css" rel="stylesheet">
    <script src="https://kit.fontawesome.com/17e84708c0.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
    <title>Céline Bonnet</title>
 </head>
 <body>
@@ -38,22 +39,29 @@
                Je publie régulièrement des articles sur différentes
                thématiques et je propose des ressources pour les 
                patients et professionnels de santé.</p>
-               <button type="button" class="slide">
+               <button type="button" class="slide" data-aos="fade-up" data-aos-duration="2000">
                   <div>En savoir plus</div>
                   <i class="icon-arrow-right"></i>
                </button>
          </div>
          <div class="grid-image">
-            <img class="fit-picture" src="assets/images/main-page/image.svg" alt="Image décoratif">
+            <img class="fit-picture" src="assets/images/main-page/image.svg" alt="Image décoratif" data-aos="fade-left" data-aos-duration="2000">
+            <img class="fit-picture2" src="assets/images/main-page/image2.svg" alt="Image décoratif" data-aos="fade-left" data-aos-duration="2000">
+            <img class="fit-picture4" src="assets/images/main-page/image4.svg" alt="Image décoratif">
+            <img class="fit-picture3" src="assets/images/main-page/image3.svg" width="100%" height="100%" alt="Image décoratif">
          </div>
        </div>
    </main>
    <footer>
       <div class="custom-shape-divider-bottom-1629785664">
-         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 120" preserveAspectRatio="none">
              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
          </svg>
      </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -2,11 +2,12 @@
 
 body {
    margin: 0;
+   overflow-x: hidden;
+   overflow-y: auto;
 }
 
 header {
    padding: 0;
-   margin-bottom: 4rem;
    .name {
       flex-wrap: wrap;
       padding: 3rem 3rem 3rem 3rem;
@@ -19,6 +20,7 @@ header {
       }
       .name--sub {
          @include display-flex;
+         flex-wrap: wrap;
          a {
             position: relative;
             padding: 1.5rem 0rem 1rem 0rem;

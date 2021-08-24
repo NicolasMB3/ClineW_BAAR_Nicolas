@@ -5,11 +5,110 @@
 @import "assets/css/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
-@media (min-width: 1200px) {  
+@media (max-width: 1200px) {  
+   main {
+      .container {
+         .grid-image {
+            .fit-picture {
+               display: none;
+            }
+            .fit-picture2 {
+               padding-right: 2rem;
+               display: block;
+            }
+         }
+      }
+   }
 }
 
-@media (min-width: 768px) {  
+@media (max-width: 950px) {  
+   main {
+      .container {
+         .h2__color {
+            margin-top: 0.8rem;
+         }
+         .grid-image {
+            padding-top: 3rem;
+            .fit-picture {
+               display: none;
+            }
+            .fit-picture2 {
+               display: none;
+            }
+            .fit-picture3 {
+               display: none;
+            }
+            .fit-picture4 {
+               display: block;
+            }
+         }
+      }
+   }
 }
 
-@media (max-width: 350px) {  
+@media (max-width: 750px) {  
+   main {
+      .container {
+         display: grid; 
+         grid-template-rows: 0.2fr 0.2fr 1fr; 
+         grid-template-areas: 
+           "grid-title grid-title"
+           "grid-subtitle grid-subtitle"
+           "grid-image grid-image";
+         justify-content: space-between; 
+         justify-items: center; 
+         .h2__color {
+            margin-top: 0.8rem;
+         }
+         .grid-image {
+            padding-top: 3rem;
+            padding-right: 0;
+            .fit-picture {
+               display: none;
+            }
+            .fit-picture2 {
+               display: none;
+            }
+            .fit-picture3 {
+               display: block;
+            }
+            .fit-picture4 {
+               display: none;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 550px) {  
+   main {
+      .container {
+         padding-bottom: 1rem;
+         .h2__color {
+            color: $primary;
+            font-size: 50px;
+            margin-bottom: 0;
+         }
+         h3 {
+            color: $grey;
+            font-size: 50px;
+            margin: 0;
+         }
+         .grid-image {
+            padding-top: 1rem;
+            .fit-picture {
+               display: none;
+            }
+            .fit-picture2 {
+               display: none;
+            }
+            .fit-picture3 {
+               display: none;
+            }
+            .fit-picture4 {
+               display: block;
+            }
+         }
+      }
+   }
 }

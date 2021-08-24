@@ -13,8 +13,10 @@ main {
         "grid-title grid-image"
         "grid-subtitle grid-image"; 
       justify-items: stretch; 
+      padding-top: 2%;
+      padding-bottom: 3rem;
       .grid-title {
-         padding-left: 5rem;
+         padding-left: 3rem;
          justify-self: start; 
          align-self: end; 
          grid-area: grid-title; 
@@ -28,16 +30,26 @@ main {
          border-radius: 10px;
       }
       .grid-subtitle {
-         padding-left: 5rem;
+         padding-left: 3rem;
          justify-self: start; 
          align-self: start; 
          grid-area: grid-subtitle; 
          line-height: 1.5rem;
       }
       .grid-image {
+         padding-right: 3rem;
          justify-self: center; 
          align-self: center; 
          grid-area: grid-image; 
+         .fit-picture3 {
+            display: none;
+         }
+         .fit-picture2 {
+            display: none;
+         }
+         .fit-picture4 {
+            display: none;
+         }
       }
       .h2__color {
          color: $primary;
