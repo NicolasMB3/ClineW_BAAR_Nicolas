@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://nicolasmb3.github.io/celine_website_240821/">
-    Céline Bonnet
+    <img src="assets/images/logo/logo.png" alt="Logo">
   </a>
 
   <p align="center">
