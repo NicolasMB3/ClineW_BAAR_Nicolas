@@ -1,0 +1,50 @@
+@use '../components' as *;
+
+body {
+   margin: 0;
+}
+
+header {
+   padding: 0;
+   margin-bottom: 4rem;
+   .name {
+      flex-wrap: wrap;
+      padding: 3rem 3rem 3rem 3rem;
+      font-family: 'Josefin Sans', sans-serif;
+      h1 {
+         @include display-flex;
+         width: 100%;
+         margin: 0;
+         color: $primary;
+      }
+      .name--sub {
+         @include display-flex;
+         a {
+            position: relative;
+            padding: 1.5rem 0rem 1rem 0rem;
+            margin: 0 2rem 0 2rem;
+            display: inline-block;
+            color: $grey;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+         }
+          a::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            border-radius: 5px;
+            background-color: $primary;
+            transform-origin: center;
+            transform: translate(-50%, 0) scaleX(0);
+            transition: transform 0.5s ease-in-out;
+          }
+          a:hover::before {
+            transform: translate(-50%, 0) scaleX(1);
+          }
+      }
+   }
+}

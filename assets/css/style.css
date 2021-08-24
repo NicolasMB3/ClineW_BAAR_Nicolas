@@ -1,0 +1,217 @@
+@import "assets/css/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+body {
+  margin: 0;
+}
+
+header {
+  padding: 0;
+  margin-bottom: 4rem;
+}
+header .name {
+  flex-wrap: wrap;
+  padding: 3rem 3rem 3rem 3rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+header .name h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  color: #FF914D;
+}
+header .name .name--sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .name .name--sub a {
+  position: relative;
+  padding: 1.5rem 0rem 1rem 0rem;
+  margin: 0 2rem 0 2rem;
+  display: inline-block;
+  color: #808080;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+header .name .name--sub a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #FF914D;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+header .name .name--sub a:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
+
+.custom-shape-divider-top-1629764535 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1629764535 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 363px;
+}
+
+.custom-shape-divider-top-1629764535 .shape-fill {
+  fill: #ff914d09;
+}
+
+.custom-shape-divider-bottom-1629763985 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+main {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  z-index: 2;
+  width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 0.6fr 1fr;
+  grid-template-areas: "grid-title grid-image" "grid-subtitle grid-image";
+  justify-items: stretch;
+}
+main .container .grid-title {
+  padding-left: 5rem;
+  justify-self: start;
+  align-self: end;
+  grid-area: grid-title;
+}
+main .container .underline {
+  margin: 1rem 0 2rem 0;
+  position: relative;
+  width: 13rem;
+  height: 0.3rem;
+  background-color: #FF914D;
+  border-radius: 10px;
+}
+main .container .grid-subtitle {
+  padding-left: 5rem;
+  justify-self: start;
+  align-self: start;
+  grid-area: grid-subtitle;
+  line-height: 1.5rem;
+}
+main .container .grid-image {
+  justify-self: center;
+  align-self: center;
+  grid-area: grid-image;
+}
+main .container .h2__color {
+  color: #FF914D;
+  width: 80%;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+main .container h3 {
+  color: #808080;
+  font-size: 70px;
+  margin: 0;
+}
+main .container p {
+  font-size: 18px;
+  width: 80%;
+  color: #808080;
+}
+
+.slide {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 25px 10px;
+  outline: 0;
+  border: 1px solid #808080;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+.slide i {
+  opacity: 0;
+  font-size: 13px;
+  transition: 0.2s;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  transition: transform 1;
+}
+.slide div {
+  padding-top: 0.5rem;
+  transition: transform 0.8s;
+}
+.slide:hover div {
+  transform: translateX(-6px);
+}
+.slide::after {
+  content: "";
+  background-color: #FF914D;
+  border-radius: 5px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+}
+.slide:hover i {
+  opacity: 1;
+  transform: translateX(-6px);
+}
+
+.custom-shape-divider-bottom-1629764839 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1629764839 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 47px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1629764839 .shape-fill {
+  fill: #ff914d11;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  color: #808080;
+}
+
+/*# sourceMappingURL=style.css.map */
