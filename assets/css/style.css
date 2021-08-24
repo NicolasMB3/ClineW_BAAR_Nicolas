@@ -53,38 +53,6 @@ header .name .name--sub a:hover::before {
   transform: translate(-50%, 0) scaleX(1);
 }
 
-.custom-shape-divider-top-1629764535 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  z-index: -1;
-}
-
-.custom-shape-divider-top-1629764535 svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 363px;
-}
-
-.custom-shape-divider-top-1629764535 .shape-fill {
-  fill: #ff914d11;
-}
-
-.custom-shape-divider-bottom-1629763985 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 2;
-}
-
 main {
   font-family: "Josefin Sans", sans-serif;
   display: flex;
@@ -188,30 +156,44 @@ main .container p {
   transform: translateX(-6px);
 }
 
-.custom-shape-divider-bottom-1629764839 {
+.custom-shape-divider-top-1629764535 {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.custom-shape-divider-top-1629764535 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 363px;
+}
+.custom-shape-divider-top-1629764535 .shape-fill {
+  fill: #ff914d11;
+}
+
+.custom-shape-divider-bottom-1629785664 {
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
-
-.custom-shape-divider-bottom-1629764839 svg {
+.custom-shape-divider-bottom-1629785664 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 47px;
+  width: calc(141% + 1.3px);
+  height: 61px;
   transform: rotateY(180deg);
 }
-
-.custom-shape-divider-bottom-1629764839 .shape-fill {
+.custom-shape-divider-bottom-1629785664 .shape-fill {
   fill: #ff914d11;
-}
-
-footer {
-  font-family: "Josefin Sans", sans-serif;
-  color: #808080;
 }
 
 /*# sourceMappingURL=style.css.map */
