@@ -16,6 +16,9 @@
                padding-right: 2rem;
                display: block;
             }
+            .fit-picture5 {
+               display: none;
+            }
          }
       }
    }
@@ -38,8 +41,11 @@
             .fit-picture3 {
                display: none;
             }
-            .fit-picture4 {
+            .fit-picture5 {
                display: block;
+            }
+            .fit-picture4 {
+               display: none;
             }
          }
       }
@@ -50,7 +56,7 @@
    main {
       .container {
          display: grid; 
-         grid-template-rows: 0.2fr 0.2fr 1fr; 
+         grid-template-rows: 0.2fr 0.2fr 0.8fr; 
          grid-template-areas: 
            "grid-title grid-title"
            "grid-subtitle grid-subtitle"
@@ -59,6 +65,11 @@
          justify-items: center; 
          .h2__color {
             margin-top: 0.8rem;
+         }
+         h3 {
+            color: $grey;
+            font-size: 45px;
+            margin: 0;
          }
          .grid-image {
             padding-top: 3rem;
@@ -71,6 +82,9 @@
             }
             .fit-picture3 {
                display: block;
+            }
+            .fit-picture5 {
+               display: none;
             }
             .fit-picture4 {
                display: none;
@@ -91,7 +105,7 @@
          }
          h3 {
             color: $grey;
-            font-size: 50px;
+            font-size: 45px;
             margin: 0;
          }
          .grid-image {

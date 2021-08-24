@@ -108,6 +108,9 @@ main .container .grid-image .fit-picture2 {
 main .container .grid-image .fit-picture4 {
   display: none;
 }
+main .container .grid-image .fit-picture5 {
+  display: none;
+}
 main .container .h2__color {
   color: #FF914D;
   width: 80%;
@@ -218,6 +221,9 @@ main .container p {
     padding-right: 2rem;
     display: block;
   }
+  main .container .grid-image .fit-picture5 {
+    display: none;
+  }
 }
 @media (max-width: 950px) {
   main .container .h2__color {
@@ -235,20 +241,28 @@ main .container p {
   main .container .grid-image .fit-picture3 {
     display: none;
   }
-  main .container .grid-image .fit-picture4 {
+  main .container .grid-image .fit-picture5 {
     display: block;
+  }
+  main .container .grid-image .fit-picture4 {
+    display: none;
   }
 }
 @media (max-width: 750px) {
   main .container {
     display: grid;
-    grid-template-rows: 0.2fr 0.2fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.8fr;
     grid-template-areas: "grid-title grid-title" "grid-subtitle grid-subtitle" "grid-image grid-image";
     justify-content: space-between;
     justify-items: center;
   }
   main .container .h2__color {
     margin-top: 0.8rem;
+  }
+  main .container h3 {
+    color: #808080;
+    font-size: 45px;
+    margin: 0;
   }
   main .container .grid-image {
     padding-top: 3rem;
@@ -262,6 +276,9 @@ main .container p {
   }
   main .container .grid-image .fit-picture3 {
     display: block;
+  }
+  main .container .grid-image .fit-picture5 {
+    display: none;
   }
   main .container .grid-image .fit-picture4 {
     display: none;
@@ -278,7 +295,7 @@ main .container p {
   }
   main .container h3 {
     color: #808080;
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
   }
   main .container .grid-image {
