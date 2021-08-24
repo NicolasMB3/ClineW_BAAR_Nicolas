@@ -8,7 +8,7 @@ main {
       width: 80rem;
       display: grid; 
       grid-template-columns: 1fr auto; 
-      grid-template-rows: 0.6fr 1fr; 
+      grid-template-rows: 0.6fr 1.2fr; 
       grid-template-areas: 
         "grid-title grid-image"
         "grid-subtitle grid-image"; 
